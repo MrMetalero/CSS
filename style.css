@@ -1,0 +1,93 @@
+a[href]{
+    color: green;
+
+}
+
+a[href="https://portal.edu.gva.es/ieselgrao/"]{
+    color: red;
+
+}
+
+/* este CSS indica que cualquier a que contenga en su atributo href la 
+palabra "portal" le afecten los atributos CSS siguientes
+*/
+a[href*="portal"]{
+    color: aqua;
+
+
+}
+
+a[href*="edu"]{
+    color: rgb(82, 204, 26);
+
+
+}
+
+a[href*="ies"]{
+    color: rgb(214, 19, 188);
+
+
+}
+
+/* Aquí estamos afectando a los hijos de primer párrafo
+
+
+
+div p{
+    color: red;
+
+
+
+}
+
+*/
+
+/* Aquí estamos afectando al primer hijo del primer div
+
+*/
+
+div p:first-child{
+    color: rgb(60, 255, 0);
+
+
+
+}
+
+/*  
+:link → Permite especificar el aspecto de los
+enlaces que todavía no han sido visitados.
+:visited → Permite especificar el aspecto de los
+enlaces que todavía han sido visitados.
+*/
+
+
+a:link{
+    color: red;
+
+}
+
+
+a:visited{
+    background-color: rgb(11, 185, 40);
+    font-weight: 900;
+}
+
+p.hover:hover{
+    background-color: aqua;
+    color: red;
+}
+
+p.active:active{
+    background-color: blue;
+    color: white;
+
+}
+
+
+
+input:focus{
+    color: red;
+
+}
+
+
